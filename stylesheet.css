@@ -1,3 +1,6 @@
+body{
+    background-color: rgba(22, 11, 35, 0.753);
+}
 h1.nome{
     background-color: beige;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -7,18 +10,17 @@ h1.nome{
     border-color: tan;
     width: 150px;
     height: 25px;
-
 }
 p{
-    background-color: rgb(158, 239, 241);
+    background-color: rgb(168, 187, 197);
     border:solid;
-    border-color:mediumturquoise;
-    max-width: 50%;
+    border-color:rgb(90, 132, 131);
+    max-width: 35%;
 }
 .titulo{
-    background-color: crimson;
+    background-color: rgba(120, 76, 85, 0.54);
     border:solid;
-    border-color:maroon;
+    border-color:rgb(45, 26, 26);
     text-align: center;
 }
 .lisord{
@@ -30,5 +32,6 @@ p{
     background-color: sandybrown;
     border:solid;
     border-color:sienna;
-    max-width: 40%;
+    max-width: 90px;
+    min-width: 60px;
 }

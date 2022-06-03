@@ -4,30 +4,38 @@
     <title>SunLord</title>
     <meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="stylesheet.css" media="screen" />
-    <link rel="shortcut icon" href="Design sem nome.jpg" type="image/x-icon" />
+    <link rel="shortcut icon" href="fivecon.jpg" type="image/x-icon" />
   </head>
   <body>
     <h1 class="nome">SunLord</h1>
     <h3 class="titulo">entrada</h3>
-      <p>consumo total de energia anual(kWh/ano)</p> <!--consumo total de energia anual, deve ser informado pelo usuario-->
-      <p>irradiação do local(kWh/m²/dia)</p> <!--a irradiação do local sera de 4.38 (podendo ser alterado pelo usuario)-->
-      <p>temperatura minima ambiente(°c)</p> <!--a menor temperatura do ambiente (0.00)-->
-      <p>constante gstc(kW/m²)</p> <!--sera 1.00 por padrão-->
-      <p>taxa de desempenho do sistema (adimensional)</p> <!--tera como padrão (0.80)-->
-      <p>potencia maxima do modulo - pmp(w)</p> <!--a potencia maxima deve ser informada pelo usuario-->
-      <p>tensão do modulo em circuito aberto - voc(v)</p> <!--informado pelo usuario-->
-      <p>corrente em curto-circuito - ish(A)</p> <!--informado pelo usuario-->
-      <p>potencia maxima CA do inversor - maximum AC power(w)</p> <!--informado pelo usuario--> 
-      <p>tensão maxima do MPPT - maximum MPPT DC voltage (V)</p> <!--informado pelo usuario-->
-      <p>tensão minima do MPPT - minimum MPPT DC voltage (V)</p> <!--informado pelo usuario-->
-      <p>corrente maxima do MPPT - maximum DC current (A)</p>
-      <p>numero de MPPTs</p> <!--informado pelo usuario-->
-      <p>quantidade de inversores de frequencia</p> <!--informado pelo usuario-->
-      <p>capacidade CC instalada</p> <!-- por padrão (8932) -->
-      <p>capacidade CA instalada</p> <!--por padrão (7600)-->
-      <p>numero maximo de strings no MPPT</p> <!--por padrão (1)-->
-      <p>numero maxima de modulos por string no MPPT</p> <!--por padrão (16)-->
-   
+      <form method="POST" aciton="back.js">
+        <label for="consumo"><p>consumo total de energia anual(kWh/ano)</p></label> <!--consumo total de energia anual, deve ser informado pelo usuario-->
+        <input type="number" id="consumo" consumo="consumo" required>
+        <label for="irradi"><p>irradiação do local(kWh/m²/dia)</p></label> <!--a irradiação do local sera de 4.38 (podendo ser alterado pelo usuario)-->
+        <input type="number" id="irradi" irradi="irradi" required>
+        <label for="tempe"><p>temperatura minima ambiente(°c)</p></label> <!--a menor temperatura do ambiente (0.00)-->
+        <input type="number" id="tempe" tempe="tempe" required>
+        <label for="const"><p>constante gstc(kW/m²)</p></label> <!--sera 1.00 por padrão-->
+        <input type="number" id="const" const="const" required>
+        <label for="taxa"><p>taxa de desempenho do sistema (adimensional)</p></label> <!--tera como padrão (0.80)-->
+        <input type="number" id="taxa" taxa="taxa" required>
+        <label for="pot"><p>potencia maxima do modulo - pmp(w)</p></label> <!--a potencia maxima deve ser informada pelo usuario-->
+        <input type="number" id="pot" pot="pot" required>
+        <label for="tens"><p>tensão do modulo em circuito aberto - voc(v)</p></label> <!--informado pelo usuario-->
+        <input type="nuber" id="tens" tens="tens" required>
+        <p>corrente em curto-circuito - ish(A)</p> <!--informado pelo usuario-->
+        <p>potencia maxima CA do inversor - maximum AC power(w)</p> <!--informado pelo usuario--> 
+        <p>tensão maxima do MPPT - maximum MPPT DC voltage (V)</p> <!--informado pelo usuario-->
+        <p>tensão minima do MPPT - minimum MPPT DC voltage (V)</p> <!--informado pelo usuario-->
+        <p>corrente maxima do MPPT - maximum DC current (A)</p>
+        <p>numero de MPPTs</p> <!--informado pelo usuario-->
+        <p>quantidade de inversores de frequencia</p> <!--informado pelo usuario-->
+        <p>capacidade CC instalada</p> <!-- por padrão (8932) -->
+        <p>capacidade CA instalada</p> <!--por padrão (7600)-->
+        <p>numero maximo de strings no MPPT</p> <!--por padrão (1)-->
+        <p>numero maxima de modulos por string no MPPT</p> <!--por padrão (16)-->
+      </form>
         <!--apartir daqui-->
       <!--o numeor de modulos deve ser informado, e o numero de MPPT pode ser diferente de um caso informado ser mais de um deve ser possivel inserir as informações-->
     <h3 class="titulo">Dados dos arranjos</h3>
