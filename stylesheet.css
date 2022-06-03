@@ -1,3 +1,34 @@
-h1.titulo{background-color: rgb(27, 97, 97);
-    b
+h1.nome{
+    background-color: beige;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: large;
+    text-align: center;
+    border: solid;
+    border-color: tan;
+    width: 150px;
+    height: 25px;
+
+}
+p{
+    background-color: rgb(158, 239, 241);
+    border:solid;
+    border-color:mediumturquoise;
+    max-width: 50%;
+}
+.titulo{
+    background-color: crimson;
+    border:solid;
+    border-color:maroon;
+    text-align: center;
+}
+.lisord{
+    background-color: pink;
+    border:solid;
+    border-color:rosybrown ;
+}
+.MPPT{
+    background-color: sandybrown;
+    border:solid;
+    border-color:sienna;
+    max-width: 40%;
 }
