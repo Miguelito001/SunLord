@@ -15,7 +15,7 @@ p{
     background-color: rgb(168, 187, 197);
     border:solid;
     border-color:rgb(90, 132, 131);
-    max-width: 35%;
+    
 }
 .titulo{
     background-color: rgba(120, 76, 85, 0.54);
@@ -34,4 +34,10 @@ p{
     border-color:sienna;
     max-width: 90px;
     min-width: 60px;
+}
+input{
+    background-color: aqua;
+    height: 20px;
+    border:1px solid; 
+    margin-left: 80%;
 }
