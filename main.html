@@ -5,16 +5,16 @@
     <meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="stylesheet.css" media="screen" />
     <link rel="shortcut icon" href="fivecon.jpg" type="image/x-icon" />
-    <script scr="back.js"></script>
+    <script type="text/javascript" src="back.js"></script>
   </head>
   <body>
     <h1 class="nome">SunLord</h1>
     <h3 class="titulo">entrada</h3>
-      <form method="POST" aciton="back.js">  
+      <form method="POST" action="back.js" oninput="argumentos();">  
         <label for="consumo"><p>consumo total de energia anual(kWh/ano)<input type="number" id="consumo" consumo="consumo" required></p></label> <!--consumo total de energia anual, deve ser informado pelo usuario-->        
         <label for="irradi"><p>irradiação do local(kWh/m²/dia)<input type="number" id="irradi" irradi="irradi"></p></label> <!--a irradiação do local sera de 4.38 (podendo ser alterado pelo usuario)-->    
         <label for="tempe"><p>temperatura minima ambiente(°c)<input type="number" id="tempe" tempe="tempe"></p></label> <!--a menor temperatura do ambiente (0.00)-->        
-        <label for="const"><p>constante gstc(kW/m²)<input type="number" id="const" const="const"></p></label> <!--sera 1.00 por padrão-->       
+        <label for="consta"><p>constante gstc(kW/m²)<input type="number" id="consta" consta="consta"></p></label> <!--sera 1.00 por padrão-->       
         <label for="taxa"><p>taxa de desempenho do sistema (adimensional)<input type="number" id="taxa" taxa="taxa"></p></label> <!--tera como padrão (0.80)-->        
         <label for="pot"><p>potencia maxima do modulo - pmp(w)<input type="number" id="pot" pot="pot" required></p></label> <!--a potencia maxima deve ser informada pelo usuario-->        
         <label for="tens"><p>tensão do modulo em circuito aberto - voc(v)<input type="number" id="tens" tens="tens" required></p></label> <!--informado pelo usuario-->        
@@ -33,14 +33,15 @@
         <!--apartir daqui-->
       <!--o numeor de modulos deve ser informado, e o numero de MPPT pode ser diferente de um caso informado ser mais de um deve ser possivel inserir as informações-->
     <h3 class="titulo">Dados dos arranjos</h3>
-      <p>numero total de modulos (considera-se em todos os inversores)</p>
-      <ol class="lisord">1 MPPT
+      <label for="numMODS"><p>numero total de modulos (considera-se em todos os inversores)<input type="number" id="numMOD" numMODE="numMODE"></p></label>
+      <!--<ol class="lisord">1 MPPT
         <ul>
           <li class="MPPT">numero de strings</li>
           <li class="MPPT">modulos por strings</li>
           <li class="MPPT">azimute(°)</li>
           <li class="MPPT">inclinação(°)</li>
         </ul>  
-      </ol>
+      </ol>     -->
+      <button type="submit" class="click" onclick="enviando()">enviar</button>
   </body>
 </html>
